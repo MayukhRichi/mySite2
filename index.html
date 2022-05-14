@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Numble</title>
+    <link rel="stylesheet"
+          href="./stylesheets/file1.css"
+          type="text/css">
+</head>
+
+
+<body>
+    <!-- BACKGROUND VIDEO -->
+    <video autoplay
+           loop
+           muted
+           id="bgVideo">
+        <source src="./media/bg_number_4k.webm"
+                type="video/webm">
+    </video>
+
+    <!-- OVERLAY CONTENT -->
+    <div class="content">
+
+        <h1 id="heading"><b>NUMBLE</b></h1>
+
+        <p id="rules"><b>Read the instructions carefully !!!</b><br><br>You have to predict the 4 digit NUMBER, we have
+            guessed, using
+            as less tries as possible.<br>A VALID guess is a 4 DISTINCT-digit number with NO starting
+            zeros.<br>🟩(GREEN)
+            symbol means, digit & position both are CORRECT.<br>🟡(YELLOW) symbol means, digit is CORRECT but position
+            is
+            WRONG.<br>🔴(RED) symbol means, digit & position both are WRONG.<br>But it will NOT be mentioned which one
+            of
+            the digits corresponds to which symbol.<br>You will get at most 8 chances with points distribution [..., 8,
+            4, 2, 1].<br>But guessing correctly within first two chances will be considered LUCKY and you will NOT get
+            any point.<br><br></p>
+
+        <br><br>
+        <center>
+            <button onclick="window.location.href = './game.html';">START NEW GAME</button>
+        </center>
+
+    </div>
+
+
+    <script src="./scripts/file1.js"></script>
+
+</body>
+
+</html>

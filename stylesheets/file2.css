@@ -1,0 +1,80 @@
+@font-face {
+    font-family: font_PSR;
+    src: url("../fonts/PressStart2P-Regular.ttf");
+}
+
+@font-face {
+    font-family: font_LGR;
+    src: url("../fonts/LuckiestGuy-Regular.ttf");
+}
+
+body {
+    margin: 0 auto;
+}
+
+#bgVideo {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: fixed;
+    color: #f1f1f1;
+    width: 100%;
+}
+
+#heading {
+    font-family: font_LGR;
+    text-align: center;
+
+    animation-name: headingAnimation;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    font-size: 72px;
+    color: rgb(0, 40, 90);
+    text-shadow: 2.5px 2.5px rgb(175, 200, 250);
+    letter-spacing: 5px;
+}
+
+@keyframes headingAnimation {
+    0% {
+        font-size: 72px;
+        color: rgb(0, 40, 90);
+        text-shadow: 2.5px 2.5px rgb(175, 200, 250);
+        letter-spacing: 5px;
+    }
+
+    25% {
+        font-size: 84px;
+        color: rgb(75, 125, 200);
+        text-shadow: 5px 5px rgb(75, 125, 200);
+        letter-spacing: 15px;
+    }
+
+    50% {
+        font-size: 96px;
+        color: rgb(175, 200, 250);
+        text-shadow: 7.5px 7.5px rgb(0, 40, 90);
+        letter-spacing: 25px;
+    }
+
+    75% {
+        font-size: 84px;
+        color: rgb(75, 125, 200);
+        text-shadow: 5px 5px rgb(75, 125, 200);
+        letter-spacing: 15px;
+    }
+
+    100% {
+        font-size: 72px;
+        color: rgb(0, 40, 90);
+        text-shadow: 2.5px 2.5px rgb(175, 200, 250);
+        letter-spacing: 5px;
+    }
+}
