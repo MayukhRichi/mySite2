@@ -65,6 +65,7 @@ const textBox = document.querySelector("input");
 textBox.addEventListener("keypress", (event) => {
     const guess = event.target.value;
     if (event.key == "Enter" && guess != '' && isValid(guess)) {
+        event.target.value = '';
         const decision = getDecision(answer, guess);
         previousRows.innerHTML = String(`<section>
                 <div class="row">
@@ -79,7 +80,13 @@ textBox.addEventListener("keypress", (event) => {
                 </div>
             </section>`) + previousRows.innerHTML;
         attempt++;
-        if (attempt == 8 || guess == answer)
+        if (attempt == 8 || guess == answer) {
             inputSection.remove();
+        }
     }
 });
+
+// window.addEventListener("click", () => {
+//     if (attempt == 8) alert('YOU LOSE');
+//     if (guess == answer) alert('YOU WIN');
+// });
